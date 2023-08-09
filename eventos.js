@@ -1,3 +1,5 @@
-let button = document.getElementById("mybutton")
-button.style.padding= "5px";
-button.style.backgroundColor= "green";
+document.addEventListener("DOMContentLoaded", function() {
+    let thebutton = document.getElementById("button");
+    thebutton.style.padding = "5px";
+    thebutton.style.backgroundColor = "green";
+});
