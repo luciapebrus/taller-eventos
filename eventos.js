@@ -1,12 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let thebutton = document.getElementById("button");
-    thebutton.style.padding = "5px";
-    thebutton.style.backgroundColor = "green";
+    let divstyle = document.getElementById("soydiv");
+    divstyle.style.padding = "5px";
+    divstyle.style.backgroundColor = "green";
 });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function(){
     let divSaluda = document.getElementById("soydiv");
-    divSaluda.addEventListener("click", function() {
-        alert("Hola ¡Soy el div!")
-    })
-}
-)
+    let buttonsaluda = document.getElementById("mybutton");
+    function saludaD() {
+        alert("Hola ¡Soy el div!");
+        }
+    divSaluda.addEventListener("click", saludaD);
+    
+    buttonsaluda.addEventListener("click", function(){
+           alert("¡Hola!");
+           event.stopPropagation();
+           
+    });
+})
+
+//document.getElementById("soydiv").removeEventListener("click", saludaD) 
